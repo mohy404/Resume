@@ -7,14 +7,14 @@
 }
 
 body {
-    padding: 40px;
+    padding: 20px;
     background-color: #f7f7f7;
     color: #080808;
 }
 
 section {
     margin: 0 0 14px 0;
-    padding: 0 0 16px 0;
+    padding: 0 0 px 0;
     border-bottom: 1px solid #21212133;
 }
 
@@ -39,8 +39,9 @@ h4 {
 }
 
 p {
-    line-height: 22px;
+    line-height: 24px;
     font-size: 18px;
+    margin-bottom: 10px;
 }
 
 div {
@@ -56,19 +57,32 @@ span {
 
 .icons {
     width: 26px;
+    margin-right: 8px;
 }
 
 a {
     color: #551A8B;
+    text-decoration: none;
 }
 
 .btn-container {
     margin: 20px 0;
+    text-align: center;
 }
 
 .btn-container button {
-    padding: 8px 24px;
-    font-size: 16px;
+    padding: 10px 30px;
+    font-size: 18px;
+    background-color: #551A8B;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-container button:hover {
+    background-color: #450f6d;
 }
 
 .m-0 {
@@ -80,7 +94,7 @@ a {
 }
 
 .border-bottom-0 {
-    border-bottom: 0px;
+    border-bottom: 0;
 }
 
 @media print {
@@ -89,6 +103,6 @@ a {
     }
 
     body {
-        padding: 40px 40px 0 40px;
+        padding: 20px;
     }
 }
