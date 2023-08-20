@@ -8,25 +8,83 @@
 
 body {
     padding: 20px;
-    background-color: #f7f7f7;
+    background-color: #ffffff;
     color: #080808;
 }
 
+
+
+.contact-section {
+    margin-bottom: 15px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-item {
+    font-size: 18px;
+    margin: 6px 0;
+}
+
+.contact-item a {
+    color: #551A8B;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+.icons {
+    width: 26px;
+    margin-right: 8px;
+}
+
+i {
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+    .contact-info {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .contact-item {
+        width: 50%;
+    }
+}
+
+
 section {
-    margin: 0 0 14px 0;
-    padding: 0 0 px 0;
+    margin-bottom: 14px;
+    padding-bottom: 0;
     border-bottom: 1px solid #21212133;
 }
 
 section:last-of-type {
-    margin: 0;
-    padding: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
     border-bottom: none;
 }
 
 h1,
 h2 {
-    margin: 4px 0 8px 0;
+    margin-top: 4px;
+    margin-bottom: 8px;
     font-size: 25px;
 }
 
@@ -35,7 +93,8 @@ h1 {
 }
 
 h4 {
-    margin: 8px 0 2px 0;
+    margin-top: 8px;
+    margin-bottom: 2px;
 }
 
 p {
@@ -66,7 +125,8 @@ a {
 }
 
 .btn-container {
-    margin: 20px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -103,6 +163,6 @@ a {
     }
 
     body {
-        padding: 20px;
+        padding: 0;
     }
 }
